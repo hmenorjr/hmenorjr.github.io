@@ -1,7 +1,7 @@
 # hmenorjr.github.io
 This is a landing page
 
-## Credit To
+## Credit
 
 Aerial by HTML5 UP
 html5up.net | @ajlkn
@@ -38,7 +38,7 @@ you want, but for best results make sure yours is:
 
 Now, there are two ways to use it: with CSS, or with Sass:
 
-#### CSS
+**CSS**
 
 Look for this line in css/style.css (line 108 as of this writing):
 
@@ -47,19 +47,18 @@ Look for this line in css/style.css (line 108 as of this writing):
 and use it to set the page background color, URL, and placement of
 your image. It should be as close to 1500px wide as you can get it.
 
-#### Sass
+**Sass**
 
 Set the value of `$bg` to the page background color, URL, and placement
 of your image. Change $bg-width if your image is something other than 1500px wide.
 
-### Credits
 
-	Background Image:
-		Ryan Schroeder via Unsplash (unsplash.com - CC0 licensed)
-			"Icefields" (flickr.com/photos/ryanschroeder/11876741703)
+### Background Image
+Ryan Schroeder via Unsplash (unsplash.com - CC0 licensed)
+"Icefields" (flickr.com/photos/ryanschroeder/11876741703)
 
-	Icons:
-		Font Awesome (fontawesome.io)
+### Icons
+Font Awesome (fontawesome.io)
 
-	Other:
-		Responsive Tools (github.com/ajlkn/responsive-tools)
+### Other
+Responsive Tools (github.com/ajlkn/responsive-tools)
