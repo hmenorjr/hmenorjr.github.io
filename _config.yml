@@ -9,7 +9,7 @@ twitter_username: hmenorjr
 github_username:  hmenorjr
 
 # Build settings
-theme: minima
+theme: jekyll-theme-hyde-plus
 plugins:
   - jekyll-feed
 
