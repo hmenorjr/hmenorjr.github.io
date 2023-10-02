@@ -1,2 +1,5 @@
-# OSX hidden file
+# OS files
 .DS_Store
+
+# App files
+.vscode/
