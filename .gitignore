@@ -3,3 +3,21 @@
 
 # App files
 .vscode/
+
+# Generated files
+node_modules/
+dist/
+.cache
+
+# Log files
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# Environment vars
+.env
+.env.production
+
+# Astro files
+.astro/
