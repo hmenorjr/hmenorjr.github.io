@@ -3,6 +3,7 @@
 
 # App files
 .vscode/
+.idea/
 
 # Generated files
 node_modules/
