@@ -47,7 +47,7 @@ Tried all the possible solutions I could try by uninstalling the python, python3
 ## Root Cause Analysis
 Since I was not the one who set up the SSL certificate, I had to look into the history commands to see on how the previous developer set up the SSL. Found the following lines of commands:
 
-![RCA screenshot](../../../public/blog/post8/rca.webp "RCA screenshot")
+![RCA screenshot](../public/blog/post8/rca.webp "RCA screenshot")
 
 Then tried looking into YouTube by passing the search criteria “letsencrypt certbot” and found something similar process which seems that it was installed on an old process of certbot.
 

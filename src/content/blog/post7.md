@@ -1,16 +1,42 @@
 ---
 title: "Bard, an AI experiment by Google"
 description: "Google now has their own version of ChatGPT in beta."
-pubDate: "Sep 11 2022"
-heroImage: "/post_img.webp"
+pubDate: "Sep 01, 2023"
+heroImage: "/blog/post7/unsplash-mojahid-mottakin.jpeg"
 ---
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Vitae ultricies leo integer malesuada nunc vel risus commodo viverra. Adipiscing enim eu turpis egestas pretium. Euismod elementum nisi quis eleifend quam adipiscing. In hac habitasse platea dictumst vestibulum. Sagittis purus sit amet volutpat. Netus et malesuada fames ac turpis egestas. Eget magna fermentum iaculis eu non diam phasellus vestibulum lorem. Varius sit amet mattis vulputate enim. Habitasse platea dictumst quisque sagittis. Integer quis auctor elit sed vulputate mi. Dictumst quisque sagittis purus sit amet.
+I got an email from Google about Bard, an AI experiment by Google. Because I've been writing reviews in Google Maps they added this AI to Local Guides. 
+According to Google, one can think of Bard as your creative and helpful collaborator, here to boost your productivity, accelerate your ideas, and fuel your curiosity.
 
-Morbi tristique senectus et netus. Id semper risus in hendrerit gravida rutrum quisque non tellus. Habitasse platea dictumst quisque sagittis purus sit amet. Tellus molestie nunc non blandit massa. Cursus vitae congue mauris rhoncus. Accumsan tortor posuere ac ut. Fringilla urna porttitor rhoncus dolor. Elit ullamcorper dignissim cras tincidunt lobortis. In cursus turpis massa tincidunt dui ut ornare lectus. Integer feugiat scelerisque varius morbi enim nunc. Bibendum neque egestas congue quisque egestas diam. Cras ornare arcu dui vivamus arcu felis bibendum. Dignissim suspendisse in est ante in nibh mauris. Sed tempus urna et pharetra pharetra massa massa ultricies mi.
+## Privacy, the Important Stuff (to others)
+Of course, I had to go to _privacy_ on how they will use my data for this. But the mere fact that I have a Gmail account and post comments/reviews on Google Maps, they've already been using my data and sell it to advertisers.
 
-Mollis nunc sed id semper risus in. Convallis a cras semper auctor neque. Diam sit amet nisl suscipit. Lacus viverra vitae congue eu consequat ac felis donec. Egestas integer eget aliquet nibh praesent tristique magna sit amet. Eget magna fermentum iaculis eu non diam. In vitae turpis massa sed elementum. Tristique et egestas quis ipsum suspendisse ultrices. Eget lorem dolor sed viverra ipsum. Vel turpis nunc eget lorem dolor sed viverra. Posuere ac ut consequat semper viverra nam. Laoreet suspendisse interdum consectetur libero id faucibus. Diam phasellus vestibulum lorem sed risus ultricies tristique. Rhoncus dolor purus non enim praesent elementum facilisis. Ultrices tincidunt arcu non sodales neque. Tempus egestas sed sed risus pretium quam vulputate. Viverra suspendisse potenti nullam ac tortor vitae purus faucibus ornare. Fringilla urna porttitor rhoncus dolor purus non. Amet dictum sit amet justo donec enim.
+But in case, you can go into the page and read it. I'm currently in EU, so they need to follow. However, we all know that the "Don't do evil" mantra or motto of Google is far long gone.
+![unsplash-chris-yang](../public/blog/post7/unsplash-chris-yang.jpeg "unsplash-chris-yang")
 
-Mattis ullamcorper velit sed ullamcorper morbi tincidunt. Tortor posuere ac ut consequat semper viverra. Tellus mauris a diam maecenas sed enim ut sem viverra. Venenatis urna cursus eget nunc scelerisque viverra mauris in. Arcu ac tortor dignissim convallis aenean et tortor at. Curabitur gravida arcu ac tortor dignissim convallis aenean et tortor. Egestas tellus rutrum tellus pellentesque eu. Fusce ut placerat orci nulla pellentesque dignissim enim sit amet. Ut enim blandit volutpat maecenas volutpat blandit aliquam etiam. Id donec ultrices tincidunt arcu. Id cursus metus aliquam eleifend mi.
+## What is Bard?
+### The AI Chatbot That Can Do It All
+Bard is a large language model chatbot developed by Google AI. It is trained on a massive dataset of text and code, and can generate text,translate languages, write different kinds of creative content 
+and answer your questions in an informative way.
 
-Tempus quam pellentesque nec nam aliquam sem. Risus at ultrices mi tempus imperdiet. Id porta nibh venenatis cras sed felis eget velit. Ipsum a arcu cursus vitae. Facilisis magna etiam tempor orci eu lobortis elementum. Tincidunt dui ut ornare lectus sit. Quisque non tellus orci ac. Blandit libero volutpat sed cras. Nec tincidunt praesent semper feugiat nibh sed pulvinar proin gravida. Egestas integer eget aliquet nibh praesent tristique magna.
+### Beta Test
+his is still under development, but it has learned to perform many kinds of tasks, including:
+- Following instructions and completing requests thoughtfully. 
+- Answering questions in a comprehensive and informative way, even if they are open-ended, challenging, or strange. 
+- Generating different creative text formats of text content, like poems, code, scripts, musical pieces, email, letters, etc.
+
+### The Potential
+Though still under development, but it has the potential to be a powerful tool for a variety of purposes. It can be used for:
+- Education: Bard can be used to help students learn new concepts by generating interactive lessons and activities.
+- Customer service: Bard can be used to answer customer questions and resolve issues.
+- Research: Bard can be used to gather and analyze data, and to generate new ideas.
+- Creativity: Bard can be used to help people write stories, poems and other creative content.
+
+If you are interested in trying out Bard, you can access it through the Google AI website. Even though it's under development, it is a powerful tool that has the potential to change the way we interact with computers.
+
+### Overall
+Bard is a promising new technology that has the potential to be a powerful tool for a variety of purposes. Remember that this is built by Google. <br/>
+<br/>So, with that in mind, would consider trying this one out?
+
+## Support
+Not a fan of a paywall but would appreciate some [coffee](https://ko-fi.com/hmenorjr) or pizza maybe?
