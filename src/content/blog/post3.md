@@ -1,17 +1,80 @@
 ---
-title: "Demo Post 3"
-description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
-pubDate: "Sep 12 2022"
-heroImage: "/post_img.webp"
-badge: "Demo badge"
+title: "Update Letsencrtpt with Certbot"
+description: "Solving the `sudo certbot renew` problem."
+pubDate: "Sep 08, 2023"
+heroImage: "/blog/post3/unsplash_kelvin_ang.jpeg"
+badge: "latest"
 ---
+## TL;DR
+I was trying to update the SSL certificate on our AWS/EC2 instance but the sudo certbot renew was throwing an error. After trying so many options on Google and nothing worked. Finally decided to just re-install the certificate by following instructions in https://certbot.eff.org/lets-encrypt/ubuntuxenial-apache
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Vitae ultricies leo integer malesuada nunc vel risus commodo viverra. Adipiscing enim eu turpis egestas pretium. Euismod elementum nisi quis eleifend quam adipiscing. In hac habitasse platea dictumst vestibulum. Sagittis purus sit amet volutpat. Netus et malesuada fames ac turpis egestas. Eget magna fermentum iaculis eu non diam phasellus vestibulum lorem. Varius sit amet mattis vulputate enim. Habitasse platea dictumst quisque sagittis. Integer quis auctor elit sed vulputate mi. Dictumst quisque sagittis purus sit amet.
+## The Story
+Tried running the `sudo certbot` renew command as instructed on the https://certbot.eff.org website, I got the following error:
 
-Morbi tristique senectus et netus. Id semper risus in hendrerit gravida rutrum quisque non tellus. Habitasse platea dictumst quisque sagittis purus sit amet. Tellus molestie nunc non blandit massa. Cursus vitae congue mauris rhoncus. Accumsan tortor posuere ac ut. Fringilla urna porttitor rhoncus dolor. Elit ullamcorper dignissim cras tincidunt lobortis. In cursus turpis massa tincidunt dui ut ornare lectus. Integer feugiat scelerisque varius morbi enim nunc. Bibendum neque egestas congue quisque egestas diam. Cras ornare arcu dui vivamus arcu felis bibendum. Dignissim suspendisse in est ante in nibh mauris. Sed tempus urna et pharetra pharetra massa massa ultricies mi.
+```./certbot-auto has insecure permissions!
+To learn how to fix them, visit https://community.letsencrypt.org/t/certbot-auto-deployment-best-practices/91979/
+Creating virtual environment…
+Traceback (most recent call last):
+File “/usr/lib/python3/dist-packages/virtualenv.py”, line 2363, in <module>
+main()
+File “/usr/lib/python3/dist-packages/virtualenv.py”, line 719, in main
+symlink=options.symlink)
+File “/usr/lib/python3/dist-packages/virtualenv.py”, line 988, in create_environment
+download=download,
+File “/usr/lib/python3/dist-packages/virtualenv.py”, line 918, in install_wheel
+callsubprocess(cmd, showstdout=False, extra_env=env, stdin=SCRIPT)
+File “/usr/lib/python3/dist-packages/virtualenv.py”, line 812, in call_subprocess
+% (cmd_desc, proc.returncode))
+OSError: Command /opt/eff.org/certbot/venv/bin/python2.7 — setuptools pkg_resources pip wheel failed with error code 1
+Traceback (most recent call last):
+File “<stdin>”, line 27, in <module>
+File “<stdin>”, line 19, in create_venv
+File “/usr/lib/python2.7/subprocess.py”, line 541, in check_call
+raise CalledProcessError(retcode, cmd)
+subprocess.CalledProcessError: Command ‘[‘virtualenv’, ‘ — no-site-packages’, ‘ — python’, ‘/usr/bin/python2.7’, ‘/opt/eff.org/certbot/venv’]’ returned non-zero exit status 1
+```
 
-Mollis nunc sed id semper risus in. Convallis a cras semper auctor neque. Diam sit amet nisl suscipit. Lacus viverra vitae congue eu consequat ac felis donec. Egestas integer eget aliquet nibh praesent tristique magna sit amet. Eget magna fermentum iaculis eu non diam. In vitae turpis massa sed elementum. Tristique et egestas quis ipsum suspendisse ultrices. Eget lorem dolor sed viverra ipsum. Vel turpis nunc eget lorem dolor sed viverra. Posuere ac ut consequat semper viverra nam. Laoreet suspendisse interdum consectetur libero id faucibus. Diam phasellus vestibulum lorem sed risus ultricies tristique. Rhoncus dolor purus non enim praesent elementum facilisis. Ultrices tincidunt arcu non sodales neque. Tempus egestas sed sed risus pretium quam vulputate. Viverra suspendisse potenti nullam ac tortor vitae purus faucibus ornare. Fringilla urna porttitor rhoncus dolor purus non. Amet dictum sit amet justo donec enim.
+Googled the following `letsencrypt certbot` and appending the error:
+```
+Creating virtual environment…
+Traceback (most recent call last):
+File
+```
 
-Mattis ullamcorper velit sed ullamcorper morbi tincidunt. Tortor posuere ac ut consequat semper viverra. Tellus mauris a diam maecenas sed enim ut sem viverra. Venenatis urna cursus eget nunc scelerisque viverra mauris in. Arcu ac tortor dignissim convallis aenean et tortor at. Curabitur gravida arcu ac tortor dignissim convallis aenean et tortor. Egestas tellus rutrum tellus pellentesque eu. Fusce ut placerat orci nulla pellentesque dignissim enim sit amet. Ut enim blandit volutpat maecenas volutpat blandit aliquam etiam. Id donec ultrices tincidunt arcu. Id cursus metus aliquam eleifend mi.
+Tried all the possible solutions I could try by uninstalling the python, python3 and virtualenv. Nothing worked.
 
-Tempus quam pellentesque nec nam aliquam sem. Risus at ultrices mi tempus imperdiet. Id porta nibh venenatis cras sed felis eget velit. Ipsum a arcu cursus vitae. Facilisis magna etiam tempor orci eu lobortis elementum. Tincidunt dui ut ornare lectus sit. Quisque non tellus orci ac. Blandit libero volutpat sed cras. Nec tincidunt praesent semper feugiat nibh sed pulvinar proin gravida. Egestas integer eget aliquet nibh praesent tristique magna.
+## Root Cause Analysis
+Since I was not the one who set up the SSL certificate, I had to look into the history commands to see on how the previous developer set up the SSL. Found the following lines of commands:
+
+![RCA screenshot](../../../public/blog/post3/rca.webp "RCA screenshot")
+
+Then tried looking into YouTube by passing the search criteria “letsencrypt certbot” and found something similar process which seems that it was installed on an old process of certbot.
+
+## The End Game
+Out of frustration, I just did the following as instructed on the certbot website
+
+### Installation:
+```
+$ sudo apt-get update
+$ sudo apt-get install software-properties-common
+$ sudo add-apt-repository universe
+$ sudo add-apt-repository ppa:certbot/certbot
+$ sudo apt-get update
+$ sudo apt-get install certbot python-certbot-apache
+Run apache:
+$ sudo certbot — apache
+
+Your existing certificate has been successfully renewed, and the new certificate
+has been installed.
+
+The new certificate covers the following domains:
+https://mydomain
+
+You should test your configuration at:
+https://www.ssllabs.com/ssltest/analyze.html?d=myDoman
+Note: Replace myDomain with the actual URL
+```
+
+## Get Involved
+If this helped you, consider donating: https://ko-fi.com/hmenorjr
+
