@@ -1,8 +1,8 @@
 ---
 title: "Update Letsencrypt with Certbot"
-description: "Solving the `sudo certbot renew` problem."
+description: "Solving the sudo certbot renew problem."
 pubDate: "Sep 08, 2023"
-heroImage: "/blog/post3/unsplash_kelvin_ang.jpeg"
+heroImage: "/blog/post8/unsplash_kelvin_ang.jpeg"
 badge: "latest"
 ---
 ## TL;DR
@@ -11,7 +11,8 @@ I was trying to update the SSL certificate on our AWS/EC2 instance but the sudo 
 ## The Story
 Tried running the `sudo certbot` renew command as instructed on the https://certbot.eff.org website, I got the following error:
 
-```./certbot-auto has insecure permissions!
+```
+./certbot-auto has insecure permissions!
 To learn how to fix them, visit https://community.letsencrypt.org/t/certbot-auto-deployment-best-practices/91979/
 Creating virtual environment…
 Traceback (most recent call last):
