@@ -1,6 +1,6 @@
 ---
-title: "Demo Post 2"
-description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+title: "Bard, an AI experiment by Google"
+description: "Google now has their own version of ChatGPT in beta."
 pubDate: "Sep 11 2022"
 heroImage: "/post_img.webp"
 ---
