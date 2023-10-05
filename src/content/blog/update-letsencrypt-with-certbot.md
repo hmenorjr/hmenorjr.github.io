@@ -78,4 +78,3 @@ Note: Replace myDomain with the actual URL
 
 ## Get Involved
 If this helped you, consider donating: https://ko-fi.com/hmenorjr
-
