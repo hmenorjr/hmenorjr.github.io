@@ -2,7 +2,7 @@
 title: "Bard, an AI experiment by Google"
 description: "Google now has their own version of ChatGPT in beta."
 pubDate: "Sep 01, 2023"
-heroImage: "/blog/post7/unsplash-mojahid-mottakin.jpeg"
+heroImage: "/unsplash-mojahid-mottakin.jpeg"
 ---
 
 I got an email from Google about Bard, an AI experiment by Google. Because I've been writing reviews in Google Maps they added this AI to Local Guides. 
@@ -12,7 +12,7 @@ According to Google, one can think of Bard as your creative and helpful collabor
 Of course, I had to go to _privacy_ on how they will use my data for this. But the mere fact that I have a Gmail account and post comments/reviews on Google Maps, they've already been using my data and sell it to advertisers.
 
 But in case, you can go into the page and read it. I'm currently in EU, so they need to follow. However, we all know that the "Don't do evil" mantra or motto of Google is far long gone.
-![unsplash-chris-yang](../public/blog/post7/unsplash-chris-yang.jpeg "unsplash-chris-yang")
+![unsplash-chris-yang](/unsplash-chris-yang.jpeg "unsplash-chris-yang")
 
 ## What is Bard?
 ### The AI Chatbot That Can Do It All
