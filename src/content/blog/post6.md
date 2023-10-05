@@ -55,10 +55,10 @@ Config macOS' console/terminal/command prompt or whatever you call it.
 5. Restart the terminal
 
 Profile 1:
-![screenshot profile 1](/public/screenshot-profile-1.webp "screenshot profile 1")
+![screenshot profile 1](/screenshot-profile-1.webp "screenshot profile 1")
 
 Profile 2:
-![screenshot profile 2](/public/screenshot-profile-2.webp "screenshot profile 2")
+![screenshot profile 2](/screenshot-profile-2.webp "screenshot profile 2")
 
 To start Pentaho, execute this command in the terminal:
 `cd /Applications/data-integration/`
