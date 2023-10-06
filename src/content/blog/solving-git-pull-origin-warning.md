@@ -49,5 +49,5 @@ So I started searching for what rebase and fast-forward means. So here it is:
 `git config pull.ff only` - This only performs the pull if the local branch can be fast-forwarded. If not, it simply aborts with an error message (and does not create any commits).
 
 ## Get Involved
-I’m not a fan of a paywall. However, if this helped you, consider donating for coffee… or pizza.
+I'm not a fan of a paywall. However, if this helped you, consider donating for coffee... or pizza.
 https://ko-fi.com/hmenojr
