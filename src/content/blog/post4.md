@@ -1,16 +1,53 @@
 ---
-title: "Demo Post 1"
-description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
-pubDate: "Sep 10 2022"
-heroImage: "/post_img.webp"
+title: "Static Site Builds with Contentful and Github Actions"
+description: "A step-by-step guide based on experience and other resources."
+pubDate: "Dec 20, 2020"
+heroImage: "/github_plus_contentful.webp"
 ---
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Vitae ultricies leo integer malesuada nunc vel risus commodo viverra. Adipiscing enim eu turpis egestas pretium. Euismod elementum nisi quis eleifend quam adipiscing. In hac habitasse platea dictumst vestibulum. Sagittis purus sit amet volutpat. Netus et malesuada fames ac turpis egestas. Eget magna fermentum iaculis eu non diam phasellus vestibulum lorem. Varius sit amet mattis vulputate enim. Habitasse platea dictumst quisque sagittis. Integer quis auctor elit sed vulputate mi. Dictumst quisque sagittis purus sit amet.
+## Stage Setting
+Static contents are managed using Contentful and able to set up a webhook from Contentful against a repository in Github so that we can rebuild the site on changes in Contentful. I need to input the access token in plain text into Contentful as a secret to give it access to the repository
 
-Morbi tristique senectus et netus. Id semper risus in hendrerit gravida rutrum quisque non tellus. Habitasse platea dictumst quisque sagittis purus sit amet. Tellus molestie nunc non blandit massa. Cursus vitae congue mauris rhoncus. Accumsan tortor posuere ac ut. Fringilla urna porttitor rhoncus dolor. Elit ullamcorper dignissim cras tincidunt lobortis. In cursus turpis massa tincidunt dui ut ornare lectus. Integer feugiat scelerisque varius morbi enim nunc. Bibendum neque egestas congue quisque egestas diam. Cras ornare arcu dui vivamus arcu felis bibendum. Dignissim suspendisse in est ante in nibh mauris. Sed tempus urna et pharetra pharetra massa massa ultricies mi.
+### How I did it?
+Used the following reference to achieve the goal by using a personal access token: https://www.contentful.com/blog/2020/06/01/running-static-site-builds-with-github-actions-and-contentful/
 
-Mollis nunc sed id semper risus in. Convallis a cras semper auctor neque. Diam sit amet nisl suscipit. Lacus viverra vitae congue eu consequat ac felis donec. Egestas integer eget aliquet nibh praesent tristique magna sit amet. Eget magna fermentum iaculis eu non diam. In vitae turpis massa sed elementum. Tristique et egestas quis ipsum suspendisse ultrices. Eget lorem dolor sed viverra ipsum. Vel turpis nunc eget lorem dolor sed viverra. Posuere ac ut consequat semper viverra nam. Laoreet suspendisse interdum consectetur libero id faucibus. Diam phasellus vestibulum lorem sed risus ultricies tristique. Rhoncus dolor purus non enim praesent elementum facilisis. Ultrices tincidunt arcu non sodales neque. Tempus egestas sed sed risus pretium quam vulputate. Viverra suspendisse potenti nullam ac tortor vitae purus faucibus ornare. Fringilla urna porttitor rhoncus dolor purus non. Amet dictum sit amet justo donec enim.
+We don't need to do all those, just a few steps for the "machine_user" or "Bot"
 
-Mattis ullamcorper velit sed ullamcorper morbi tincidunt. Tortor posuere ac ut consequat semper viverra. Tellus mauris a diam maecenas sed enim ut sem viverra. Venenatis urna cursus eget nunc scelerisque viverra mauris in. Arcu ac tortor dignissim convallis aenean et tortor at. Curabitur gravida arcu ac tortor dignissim convallis aenean et tortor. Egestas tellus rutrum tellus pellentesque eu. Fusce ut placerat orci nulla pellentesque dignissim enim sit amet. Ut enim blandit volutpat maecenas volutpat blandit aliquam etiam. Id donec ultrices tincidunt arcu. Id cursus metus aliquam eleifend mi.
+## The Challenge
+The token would have access to **ALL** private repositories (inside the organization). I would like to restrict access to a specific repository. For example, https://github.com/the-org/contentful-repository.
 
-Tempus quam pellentesque nec nam aliquam sem. Risus at ultrices mi tempus imperdiet. Id porta nibh venenatis cras sed felis eget velit. Ipsum a arcu cursus vitae. Facilisis magna etiam tempor orci eu lobortis elementum. Tincidunt dui ut ornare lectus sit. Quisque non tellus orci ac. Blandit libero volutpat sed cras. Nec tincidunt praesent semper feugiat nibh sed pulvinar proin gravida. Egestas integer eget aliquet nibh praesent tristique magna.
+## Solution
+To achieve this, we need to do the following:
+
+1. Create an email address for the bot. Since we need this for step
+2. Register the newly created user in Github.
+3. Add the "Machine User" or Bot to the organization and provide repository access to only one specific repository.
+4. Generate a personal access token for the "machine_user" account.
+
+## Add The Bot as Collaborator to the Organization
+After step 1 and step 2, it's time to configure the bot. For this example we will use Contentful Bot. The picture is Gir from the animated TV series _[Invader Zim](https://en.wikipedia.org/wiki/Invader_Zim)_.
+
+![github bot account image](/github_bot_account.webp "github bot account image")
+
+![github bot account in dashboard](/github_bot_account_dash.webp "github bot account in dashboard")
+
+Make sure your "bot" have only one access which is the private repository.
+
+![image of the permission of bot](/github_bot_permission.webp "image of the permission of bot")
+
+## Generate the Personal Token for the Bot
+You can achieve this by logging in as the Bot and go straight to the profile settings.
+
+### Developer Settings
+![image of developer settings](/developer_settings.webp "image of developer settings")
+
+### Personal access tokens
+![image of personal access token config](/personal_access_tokens.webp "image of personal access token config")
+
+### Click on `repo`
+![image of developer settings repository](/developer_settings_repo.webp "image of developer settings repository")
+
+After this step, it showed the token. Copied it and sent it to the ticket reporter. Reporter confirmed that the bot/_[machine_user](https://docs.github.com/en/free-pro-team@latest/developers/overview/managing-deploy-keys#machine-users)_ worked as expected.
+
+## Get Involved
+Not a fan of paywall, but would appreciate a donation for some coffee... Or pizza. https://ko-fi.com/hmenorjr
