@@ -2,7 +2,7 @@
 title: "Upgrading Python2 to Python3 on a MacOS using Homebrew"
 description: "Using homebrew instead of manual installation."
 pubDate: "Jun 5, 2020"
-heroImage: "/unsplash_james_harisson.jpeg"
+heroImage: "/unsplash_james_harrison.jpeg"
 ---
 
 ## Foreword
