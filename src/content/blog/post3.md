@@ -1,16 +1,94 @@
 ---
-title: "Demo Post 3"
-description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
-pubDate: "Sep 10 2022"
-heroImage: "/post_img.webp"
+title: "Upgrading Python2 to Python3 on a MacOS using Homebrew"
+description: "Using homebrew instead of manual installation."
+pubDate: "Jun 5, 2020"
+heroImage: "/unsplash_james_harisson.jpeg"
 ---
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Vitae ultricies leo integer malesuada nunc vel risus commodo viverra. Adipiscing enim eu turpis egestas pretium. Euismod elementum nisi quis eleifend quam adipiscing. In hac habitasse platea dictumst vestibulum. Sagittis purus sit amet volutpat. Netus et malesuada fames ac turpis egestas. Eget magna fermentum iaculis eu non diam phasellus vestibulum lorem. Varius sit amet mattis vulputate enim. Habitasse platea dictumst quisque sagittis. Integer quis auctor elit sed vulputate mi. Dictumst quisque sagittis purus sit amet.
+## Foreword
+Like most developers using MacOS or OSX, we use `Homebrew`` to install and update software/casks. As of this writing, I was having challenges updating Python2 to Python3.
 
-Morbi tristique senectus et netus. Id semper risus in hendrerit gravida rutrum quisque non tellus. Habitasse platea dictumst quisque sagittis purus sit amet. Tellus molestie nunc non blandit massa. Cursus vitae congue mauris rhoncus. Accumsan tortor posuere ac ut. Fringilla urna porttitor rhoncus dolor. Elit ullamcorper dignissim cras tincidunt lobortis. In cursus turpis massa tincidunt dui ut ornare lectus. Integer feugiat scelerisque varius morbi enim nunc. Bibendum neque egestas congue quisque egestas diam. Cras ornare arcu dui vivamus arcu felis bibendum. Dignissim suspendisse in est ante in nibh mauris. Sed tempus urna et pharetra pharetra massa massa ultricies mi.
+## What I Did
+### Check Version
+After executing the this command: `$ brew info python`
 
-Mollis nunc sed id semper risus in. Convallis a cras semper auctor neque. Diam sit amet nisl suscipit. Lacus viverra vitae congue eu consequat ac felis donec. Egestas integer eget aliquet nibh praesent tristique magna sit amet. Eget magna fermentum iaculis eu non diam. In vitae turpis massa sed elementum. Tristique et egestas quis ipsum suspendisse ultrices. Eget lorem dolor sed viverra ipsum. Vel turpis nunc eget lorem dolor sed viverra. Posuere ac ut consequat semper viverra nam. Laoreet suspendisse interdum consectetur libero id faucibus. Diam phasellus vestibulum lorem sed risus ultricies tristique. Rhoncus dolor purus non enim praesent elementum facilisis. Ultrices tincidunt arcu non sodales neque. Tempus egestas sed sed risus pretium quam vulputate. Viverra suspendisse potenti nullam ac tortor vitae purus faucibus ornare. Fringilla urna porttitor rhoncus dolor purus non. Amet dictum sit amet justo donec enim.
+The result:
+```
+python: stable 3.7.7 (bottled), HEAD
+Interpreted, interactive, object-oriented programming language
+https://www.python.org/
+Not installed
+From: https://github.com/Homebrew/homebrew-core/blob/master/Formula/python.rb
+==> Dependencies
+Build: pkg-config ✘
+Required: gdbm ✔, openssl@1.1 ✔, readline ✔, sqlite ✔, xz ✔
+==> Options
+--HEAD
+    Install HEAD version
+==> Caveats
+Python has been installed as
+  /usr/local/bin/python3
+Unversioned symlinks `python`, `python-config`, `pip` etc. pointing to`python3`, `python3-config`, `pip3` etc., respectively, have been installed into 
+  /usr/local/opt/python/libexec/bin
+You can install Python packages with
+  pip3 install <package>
+They will install into the site-package directory
+  /usr/local/lib/python3.7/site-packages
+See: https://docs.brew.sh/Homebrew-and-Python
+==> Analytics
+install: 198,504 (30 days), 1,021,773 (90 days), 5,245,160 (365 days)
+install-on-request: 162,871 (30 days), 639,716 (90 days), 2,755,324 (365 days)
+build-error: 0 (30 days)
+```
 
-Mattis ullamcorper velit sed ullamcorper morbi tincidunt. Tortor posuere ac ut consequat semper viverra. Tellus mauris a diam maecenas sed enim ut sem viverra. Venenatis urna cursus eget nunc scelerisque viverra mauris in. Arcu ac tortor dignissim convallis aenean et tortor at. Curabitur gravida arcu ac tortor dignissim convallis aenean et tortor. Egestas tellus rutrum tellus pellentesque eu. Fusce ut placerat orci nulla pellentesque dignissim enim sit amet. Ut enim blandit volutpat maecenas volutpat blandit aliquam etiam. Id donec ultrices tincidunt arcu. Id cursus metus aliquam eleifend mi.
+### Installing using Homebrew
+Now the fun begins. I ran `brew install python` and got some errors. Check the log/s:
 
-Tempus quam pellentesque nec nam aliquam sem. Risus at ultrices mi tempus imperdiet. Id porta nibh venenatis cras sed felis eget velit. Ipsum a arcu cursus vitae. Facilisis magna etiam tempor orci eu lobortis elementum. Tincidunt dui ut ornare lectus sit. Quisque non tellus orci ac. Blandit libero volutpat sed cras. Nec tincidunt praesent semper feugiat nibh sed pulvinar proin gravida. Egestas integer eget aliquet nibh praesent tristique magna.
+```
+Error: The `brew link` step did not complete successfully
+The formula built, but is not symlinked into /usr/local
+Could not symlink bin/2to3
+Target /usr/local/bin/2to3
+already exists. You may want to remove it:
+  rm '/usr/local/bin/2to3'
+To force the link and overwrite all conflicting files:
+  brew link --overwrite python
+To list all files that would be deleted:
+  brew link --overwrite --dry-run python
+Possible conflicting files are:
+/usr/local/bin/2to3 -> /Library/Frameworks/Python.framework/Versions/3.8/bin/2to3
+/usr/local/bin/idle3 -> /Library/Frameworks/Python.framework/Versions/3.8/bin/idle3
+/usr/local/bin/pydoc3 -> /Library/Frameworks/Python.framework/Versions/3.8/bin/pydoc3
+/usr/local/bin/python3 -> /Library/Frameworks/Python.framework/Versions/3.8/bin/python3
+/usr/local/bin/python3-config -> /Library/Frameworks/Python.framework/Versions/3.8/bin/python3-config
+Error: Permission denied @ dir_s_mkdir - /usr/local/Frameworks
+```
+
+I tried removing the folder one by one and forgot you can just override it. Don't worry, it's safe. (^^,)
+This is done by running: `$ brew link --overwrite python`
+
+> DJ Khaled!!!
+![DJ Khaled Another One](/another_one_dj_khaled.jpeg "DJ Khaled Another One")
+
+Here's the error:
+`Linking /usr/local/Cellular/python/3.7.7... Error: Permission Denied @ dir_s_mkdir — /usr/local/Frameworks`
+
+#### Google is our Friend
+Privacy not included
+
+Turns out it's an existing issue. Remember, Homebrew doesn't allow or recommend to execute brew commands with sudo anymore to prevent issues. Source: https://github.com/Homebrew/homebrew-core/issues/30652
+
+So we execute the following commands:
+```
+$ sudo mkdir /usr/local/Frameworks
+$ sudo chown $USER /usr/local/Frameworks
+```
+
+Then, we execute `$ brew link python`
+
+### Final Result
+`$ Linking /usr/local/Cellular/python/3.7.7... 5 symlinks created`
+
+## Get Involved
+I'm not a fan of paywall. However, if this helped you, consider donating for coffee... or pizza.
+https://ko-fi.com/hmenojr
