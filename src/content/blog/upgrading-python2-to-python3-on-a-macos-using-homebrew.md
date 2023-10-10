@@ -41,9 +41,8 @@ install-on-request: 162,871 (30 days), 639,716 (90 days), 2,755,324 (365 days)
 build-error: 0 (30 days)
 ```
 
-### Installing using Homebrew
-Now the fun begins. I ran `brew install python` and got some errors. Check the log/s:
-
+### Installing with Homebrew
+Now the fun begins. I ran `brew install python` and got some errors.
 ```
 Error: The `brew link` step did not complete successfully
 The formula built, but is not symlinked into /usr/local
@@ -68,10 +67,11 @@ I tried removing the folder one by one and forgot you can just override it. Don'
 This is done by running: `$ brew link --overwrite python`
 
 > DJ Khaled!!!
+
 ![DJ Khaled Another One](/another_one_dj_khaled.jpeg "DJ Khaled Another One")
 
 Here's the error:
-`Linking /usr/local/Cellular/python/3.7.7... Error: Permission Denied @ dir_s_mkdir — /usr/local/Frameworks`
+```Linking /usr/local/Cellular/python/3.7.7... Error: Permission Denied @ dir_s_mkdir — /usr/local/Frameworks```
 
 #### Google is our Friend
 Privacy not included
