@@ -1,5 +1,5 @@
 ---
-title: "Bard, Google\'s version of ChatGPT"
+title: "Bard, Google's version of ChatGPT"
 description: "I got an email to beta test Bard. This blog is a gist of what it is, beta test and potential of this tool."
 pubDate: "Sep 01 2023"
 heroImage: "/unsplash-mojahid-mottakin.jpeg"
