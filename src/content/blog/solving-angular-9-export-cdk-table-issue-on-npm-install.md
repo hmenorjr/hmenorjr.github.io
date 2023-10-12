@@ -1,6 +1,6 @@
 ---
-title: "Solving Angular 9 \"Export CDK_Table\" Issue on NPM Install"
-description: "My journey in solving Angular 9 `Export CDK_Table` error during installation in a project"
+title: "Angular 9 \"Export CDK_Table\" Issue on NPM Install"
+description: "A gist on how I solved the Angular 9 `Export CDK_Table` error during NPM installation on a project I was working on."
 pubDate: "May 19 2020"
 heroImage: "/angular_eh.jpeg"
 ---

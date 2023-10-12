@@ -1,6 +1,6 @@
 ---
 title: "Static Site Builds with Contentful and Github Actions"
-description: "A step-by-step guide based on experience and other resources."
+description: "A step-by-step gist based on my experience and other resources."
 pubDate: "Dec 20, 2020"
 heroImage: "/github_plus_contentful.webp"
 ---

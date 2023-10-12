@@ -1,6 +1,6 @@
 ---
 title: "Install/Setup Pentaho to M1 MacOS/OSX"
-description: "Solving the out-of-the-box problem with m1 chips of MacOS"
+description: "A gist on how I solved the out-of-the-box problem of Pentaho with M1 chips of MacOS."
 pubDate: "May 20 2023"
 heroImage: "/unsplash-pakata-goh.jpeg"
 ---
