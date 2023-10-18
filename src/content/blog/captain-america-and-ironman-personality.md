@@ -90,4 +90,4 @@ How about you? Would this give an insight of "knowing yourself"?
 ## Did You Like this Topic?
 I use to write to a blog site but don't like paywalls. And if I put on a link for a donation site, the blog rank goes down.
 
-![Support my writing](/rca.webp "Support my writing")
+[![Buy me a coffee](/buy_me_a_coffee.webp)](https://ko-fi.com/hmenorjr)
