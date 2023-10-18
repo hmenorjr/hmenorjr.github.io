@@ -3,7 +3,6 @@ title: "Update Letsencrypt with Certbot"
 description: "A gist on how I solved the `sudo certbot renew` problem I encountered."
 pubDate: "Sep 08, 2023"
 heroImage: "/unsplash_kelvin_ang.jpeg"
-badge: "latest"
 ---
 ## TL;DR
 I was trying to update the SSL certificate on our AWS/EC2 instance but the sudo certbot renew was throwing an error. After trying so many options on Google and nothing worked. Finally decided to just re-install the certificate by following instructions in https://certbot.eff.org/lets-encrypt/ubuntuxenial-apache

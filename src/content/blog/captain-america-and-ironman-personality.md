@@ -2,7 +2,8 @@
 title: "Captain America and Ironman Personality?!"
 description: "I recently participated in a personality test as a requirement. I also took one with snaphunt.com when I signed-up and noticed some similarities"
 pubDate: "Oct 18 2023"
-heroImage: "/unsplash_mateusz_wacalke.jpeg"
+heroImage: "/unsplash_mateusz_waclawek.jpeg"
+badge: "latest"
 ---
 
 # Analytical Leader, Inspector, Innovative, Intuitive
