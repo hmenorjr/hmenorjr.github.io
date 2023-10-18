@@ -1,26 +1,15 @@
-# Astrofy | Personal Porfolio Website Template
+# Personal Porfolio Website Template
 
 ![Astrofy | Personal Porfolio Website Template](public/social_img.png)
 
-Astrofy is a free and open-source template for your Personal Portfolio Website built with Astro and TailwindCSS. Create in minutes a website with Blog, CV, Project Section, Store and RSS Feed.
+This is my Personal Portfolio Website built with Astro and TailwindCSS. 
 
-## Demo
-
-View a live demo of [Astrofy](https://astrofy-template.netlify.app/)
-
-## Installation
-
-Run the following command in your terminal
-
-```bash
-npm install
-```
-
-Once the packages are installed you are ready to run astro. Astro comes with a built-in development server that has everything you need for project development. The astro dev command will start the local development server so that you can see your new website in action for the very first time.
-
-```bash
-npm run dev
-```
+## Features
+- Blog
+- CV
+- Project Section
+- Store
+- RSS Feed
 
 ## Tech Stack
 
@@ -237,19 +226,11 @@ The configuration for the deployment varies depending on the platform where you 
 > **⚠️ CAUTION** </br>
 > The Blog pagination of this template is implemented using dynamic route parameters in its filename and for now this format is incompatible with SSR deploy configs, so please use the default static deploy options for your deployments.
 
-## Contributing
-
-Suggestions and pull requests are welcomed! Feel free to open a discussion or an issue for a new feature request or bug.
-
-One of the best ways of contribute is to grab a [bug report or feature suggestion](https://github.com/manuelernestog/astrofy/issues) that has been marked `accepted` and dig in.
-
-Please be wary of working on issues _not_ marked as `accepted`. Just because someone has created an issue doesn't mean we'll accept a pull request for it.
-
 ## License
 
-Astrofy is licensed under the MIT license — see the [LICENSE](https://github.com/manuelernestog/astrofy/blob/main/LICENSE) file for details.
+I used Astrofy for this. Astrofy is licensed under the MIT license — see the [LICENSE](https://github.com/manuelernestog/astrofy/blob/main/LICENSE) file for details.
 
-## Contributors
+## Credits
 
 <a href="https://github.com/manuelernestog/astrofy/graphs/contributors">
   <img src="https://contrib.rocks/image?repo=manuelernestog/astrofy" />
