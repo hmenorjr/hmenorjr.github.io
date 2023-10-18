@@ -1,7 +1,7 @@
 ---
-title: "Bard, an AI experiment by Google"
-description: "Google now has their own version of ChatGPT in beta."
-pubDate: "Sep 01, 2023"
+title: "Bard, Google's version of ChatGPT"
+description: "I got an email to beta test Bard. This blog is a gist of what it is, beta test and potential of this tool."
+pubDate: "Sep 01 2023"
 heroImage: "/unsplash-mojahid-mottakin.jpeg"
 ---
 
@@ -20,7 +20,7 @@ Bard is a large language model chatbot developed by Google AI. It is trained on 
 and answer your questions in an informative way.
 
 ### Beta Test
-his is still under development, but it has learned to perform many kinds of tasks, including:
+This is still under development, but it has learned to perform many kinds of tasks, including:
 - Following instructions and completing requests thoughtfully. 
 - Answering questions in a comprehensive and informative way, even if they are open-ended, challenging, or strange. 
 - Generating different creative text formats of text content, like poems, code, scripts, musical pieces, email, letters, etc.

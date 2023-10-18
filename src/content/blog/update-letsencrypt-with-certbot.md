@@ -1,6 +1,6 @@
 ---
 title: "Update Letsencrypt with Certbot"
-description: "Solving the sudo certbot renew problem."
+description: "A gist on how I solved the `sudo certbot renew` problem I encountered."
 pubDate: "Sep 08, 2023"
 heroImage: "/unsplash_kelvin_ang.jpeg"
 badge: "latest"
