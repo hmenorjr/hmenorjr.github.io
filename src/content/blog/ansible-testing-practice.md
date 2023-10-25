@@ -3,6 +3,7 @@ title: "Ansible Testing Practice"
 description: "DevOps is already part of my tasks as an experienced Software Engineer and Web Developer. Here are some practice to test your Ansible script."
 pubDate: "Oct 25 2023"
 heroImage: "/ansible_play_meme.png"
+badge: "latest"
 ---
 
 Because most of my experience revolves around development, I wondered how would one test the Ansible script and works as expected?
