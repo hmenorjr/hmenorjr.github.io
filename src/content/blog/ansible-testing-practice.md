@@ -2,46 +2,102 @@
 title: "Ansible Testing Practice"
 description: "DevOps is already part of my tasks as an experienced Software Engineer and Web Developer. Here are some practice to test your Ansible script."
 pubDate: "Oct 25 2023"
-heroImage: "/unsplash-mojahid-mottakin.jpeg"
+heroImage: "/ansible_play_meme.png"
 ---
 
 Because most of my experience revolves around development, I wondered how would one test the Ansible script and works as expected?
 
-Here are some steps and techniques to help you test your Ansible scripts:
+Here are some steps and techniques to help you test your Ansible scripts.
 
 ## Syntax Check
+
 Before anything else, you should always start by checking the syntax of your Ansible scripts. You can use the `ansible-playbook` command with the `--syntax-check` flag to identify any syntax errors.
 
 ```bash
-$ ansible-playbook your_playbook.yml --syntax-check
+ansible-playbook your_playbook.yml --syntax-check
 ```
 
-But in case, you can go into the page and read it. I'm currently in EU, so they need to follow. However, we all know that the "Don't do evil" mantra or motto of Google is far long gone.
-![unsplash-chris-yang](/unsplash-chris-yang.jpeg "unsplash-chris-yang")
+## Dry Run
 
-## What is Bard?
-### The AI Chatbot That Can Do It All
-Bard is a large language model chatbot developed by Google AI. It is trained on a massive dataset of text and code, and can generate text,translate languages, write different kinds of creative content 
-and answer your questions in an informative way.
+Use the `--check` flag with `ansible-playbook` to perform a dry run. This checks what would be changed without actually making any changes.
 
-### Beta Test
-This is still under development, but it has learned to perform many kinds of tasks, including:
-- Following instructions and completing requests thoughtfully. 
-- Answering questions in a comprehensive and informative way, even if they are open-ended, challenging, or strange. 
-- Generating different creative text formats of text content, like poems, code, scripts, musical pieces, email, letters, etc.
+```bash
+ansible-playbook your_playbook.yml --check
+```
 
-### The Potential
-Though still under development, but it has the potential to be a powerful tool for a variety of purposes. It can be used for:
-- Education: Bard can be used to help students learn new concepts by generating interactive lessons and activities.
-- Customer service: Bard can be used to answer customer questions and resolve issues.
-- Research: Bard can be used to gather and analyze data, and to generate new ideas.
-- Creativity: Bard can be used to help people write stories, poems and other creative content.
+## Verbose Mode
 
-If you are interested in trying out Bard, you can access it through the Google AI website. Even though it's under development, it is a powerful tool that has the potential to change the way we interact with computers.
+Increase verbosity using the `-v` or `-vv` flags to get more detailed output, which can help you identify issues.
 
-### Overall
-Bard is a promising new technology that has the potential to be a powerful tool for a variety of purposes. Remember that this is built by Google. <br/>
-<br/>So, with that in mind, would consider trying this one out?
+```bash
+ansible-playbook your_playbook.yml -vv
+```
+
+## Limit to a Subset
+
+Use the `--limit` option to target a specific subset of hosts, which can be useful for testing on a smaller scale.
+
+```bash
+ansible-playbook your_playbook.yml --limit hostname
+```
+
+## Use Ansible's Debug Module
+
+Insert `debug` tasks at different points in your playbook to print variable values and information for troubleshooting.
+
+```yaml
+- name: Debug Information
+   debug:
+     var: your_variable
+
+```
+
+## Use the --list-hosts Option
+
+This option lists all the hosts that Ansible would run against. It's useful for verifying the hosts that Ansible is targeting.
+
+```bash
+ansible-playbook your_playbook.yml --list-hosts
+```
+
+## Check the Output
+
+Well, after running your playbook, you can carefully review the output for any errors, warnings or unexpected behavior.
+
+## Rollback Plan
+
+When making changes that could potentially disrupt your systems. Ensure you have a rollback plan in place which you can use if something goes wrong during the playbook execution. Kind of the same when you're updating databases.
+
+## Run in a Testing Environment
+
+Another good practice to first test your playbooks in a non-production environment or on a subset of your infrastructure to minimize risks. I think this is already given if you've been developing apps for quite some time.
+
+## Use Ansible Modules in Check Mode
+
+Some Ansible modules support check mode. You can add the `check_mode: yes` parameter to tasks using such modules. This way, Ansible will only check if the desired state is achieved without making any changes.
+
+```yml
+- name: Ensure a file exists (check mode)
+  ansible.builtin.file:
+    path: /path/to/file
+    state: touch
+  check_mode: yes
+```
+
+## Automated Testing
+
+Consider integrating Ansible testing into your CI/CD pipeline using tools like Molecule or Ansible's built-in `ansible-test`.
+
+## Manual Testing
+
+Finally, manual testing is crucial. Validate that the desired changes have been applied correctly and that your systems are functioning as expected. But, as much as possible use this as your last option.
+
+## Final Thoughts
+
+These are just some of the stuff I searched since I feel like I'm still "raw" when it comes to Software Engineering for DevOps. Any more you could add?
 
 ## Support
-Not a fan of a paywall but would appreciate some [coffee](https://ko-fi.com/hmenorjr) or pizza maybe?
+
+Do you like this? Consider donating or subscribing for support.
+
+[![Buy me a coffee](/buy_me_a_coffee.webp)](https://ko-fi.com/hmenorjr)
