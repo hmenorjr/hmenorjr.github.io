@@ -16,30 +16,20 @@ import TimeLineElement from "../components/cv/TimeLine.astro";
     Building maintainable and scalable applications. My recent experience revolves around AWS, Java, Spring Boot, Python and TypeScript.
   </div>
 
-  <div class="mb-5">
-    <div class="mb-5 text-3xl w-full font-bold">Skills</div>
-    <ul class="list-disc md:columns-4 columns-2 mx-6">
-          <li>Java</li>
-          <li>JavaScript</li>
-          <li>Python</li>
-          <li>PHP</li>
-          <li>Spring Framework</li>
-          <li>Hibernate and JPA</li>
-          <li>React</li>
-          <li>Angular</li>
-          <li>Oracle</li>
-          <li>MySQL</li>
-          <li>Docker + Docker Compose</li>
-          <li>VSCode</li>
-          <li>IntelliJ</li>
-          <li>MacOS</li>
-          <li>Ubuntu</li>
-        </ul>
-  </div>
+    <div class="mb-5">
+      <div class="text-3xl w-full font-bold">Education</div>
+    </div>
 
-  <div class="mb-5">
-    <div class="text-3xl w-full font-bold">Experience</div>
-  </div>
+    <div class="time-line-container grid gap-4 mb-10">
+        <TimeLineElement 
+            title="Bachelor of Science in Computer Science" 
+            subtitle="2002 to 2006 at De La Salle University - Dasmariñas | Cavite, Philippines"
+        />
+    </div>
+
+    <div class="mb-5">
+        <div class="text-3xl w-full font-bold">Experience</div>
+    </div>
 
   <div class="time-line-container mb-10">
     <TimeLineElement title="Software Engineer @ Enfuce" subtitle="Jun 2022 to Jun 2023 | Mariehamn, Åland Islands, Finland">
@@ -163,6 +153,27 @@ import TimeLineElement from "../components/cv/TimeLine.astro";
     </TimeLineElement>
   </div>
 
+    <div class="mb-5">
+        <div class="mb-5 text-3xl w-full font-bold">Skills</div>
+        <ul class="list-disc md:columns-4 columns-2 mx-6">
+          <li>Java</li>
+          <li>JavaScript</li>
+          <li>Python</li>
+          <li>PHP</li>
+          <li>Spring Framework</li>
+          <li>Hibernate and JPA</li>
+          <li>React</li>
+          <li>Angular</li>
+          <li>Oracle</li>
+          <li>MySQL</li>
+          <li>Docker + Docker Compose</li>
+          <li>VSCode</li>
+          <li>IntelliJ</li>
+          <li>MacOS</li>
+          <li>Ubuntu</li>
+        </ul>
+  </div>
+
   <div class="mb-5">
     <div class="text-3xl w-full font-bold">Certifications</div>
   </div>
@@ -175,16 +186,5 @@ import TimeLineElement from "../components/cv/TimeLine.astro";
       <a href="https://www.hackerrank.com/certificates/920578337385" target="_blank">Java (Basic) by HackerRank (Click here) </a>
     </li>
   </ul>
-
-   <div class="mb-5">
-      <div class="text-3xl w-full font-bold">Education</div>
-    </div>
-
-    <div class="time-line-container grid gap-4 mb-10">
-      <TimeLineElement
-        title="Bachelor of Science in Computer Science"
-        subtitle="2002 to 2006 at De La Salle University - Dasmariñas | Cavite, Philippines"
-      />
-    </div>
 
 </BaseLayout>
