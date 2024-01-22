@@ -3,6 +3,7 @@ title: "Fix Windows' WSL DNS Issue"
 description: "Beskar-Clad journey through Windows and WSL"
 pubDate: "Jan 22 2024"
 heroImage: "/unsplash-gabriel-heinzer.jpg"
+badge: "latest"
 ---
 
 # Beskar-Clad journey through Windows and WSL
