@@ -1,6 +1,6 @@
 ---
 title: "Fix Windows' WSL DNS Issue"
-description: "My solution for the wsl2 DNS problem with ubuntu terminal and WindowsOS."
+description: "Beskar-Clad journey through Windows and WSL"
 pubDate: "Jan 22 2024"
 heroImage: "/unsplash-gabriel-heinzer.jpg"
 ---
