@@ -1,8 +1,8 @@
 ---
 title: "Fix Windows' WSL DNS Issue"
-description: "Beskar-Clad journey through Windows and WSL"
-pubDate: "Dec 08 2023"
-heroImage: "/unsplash_mateusz_waclawek.jpeg"
+description: "My solution for the wsl2 DNS problem with ubuntu terminal and WindowsOS."
+pubDate: "Jan 22 2024"
+heroImage: "/unsplash-gabriel-heinzer.jpg"
 ---
 
 # Beskar-Clad journey through Windows and WSL
