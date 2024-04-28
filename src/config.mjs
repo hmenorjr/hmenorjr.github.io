@@ -1,7 +1,7 @@
 export default {
-    title: "HMenorJr",
-    titleSuffix: " | DevOps, Software Engineer, Web Developer",
-    description: "Personal website of Herman Menor, Jr.",
+    title: "Herman Menor, Jr.",
+    titleSuffix: " - Software/Web Engineer",
+    description: "Website for Herman Menor Jr. A Software Engineer, Web Developer and DevOps Engineer",
     defaultOgImage: "./defaultog.jpg",
     latestPosts: 3,
     postsPerPage: 3,
