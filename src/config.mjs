@@ -1,6 +1,6 @@
 export default {
     title: "HMJ",
-    titleSuffix: "Labs",
+    titleSuffix: " Labs",
     description: "Laborartory for website development and design",
     defaultOgImage: "./defaultog.jpg",
     latestPosts: 3,
