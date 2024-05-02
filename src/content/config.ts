@@ -17,7 +17,6 @@ const pageCollection = defineCollection({
     type: 'content', // v2.5.0 and later
     schema: ({image}) => z.object({
         title: z.string(),
-        subtitle: z.string(),
         intro: z.string(),
         image: image().optional(),
         type: z.string().optional(),
