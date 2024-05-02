@@ -1,6 +1,6 @@
 export default {
     title: "HMenorJr",
-    titleSuffix: " Development and Design",
+    titleSuffix: " Customs",
     description: "A website development, design and blogging for solving technical problem encounters of Herman Menor, Jr.",
     defaultOgImage: "./defaultog.jpg",
     latestPosts: 3,
