@@ -57,11 +57,6 @@
           "type": "string"
         },
         {
-          "title": "subtitle",
-          "name": "subtitle",
-          "type": "string"
-        },
-        {
           "title": "Cover",
           "name": "image",
           "type": "image",
