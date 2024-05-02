@@ -1,7 +1,7 @@
 export default {
-    title: "HMJ",
-    titleSuffix: " Labs",
-    description: "Laborartory for website development and design",
+    title: "HMenorJr",
+    titleSuffix: " Web",
+    description: "HMenorJr is a website development, design and blogging for solving technical problem encounters of Herman Menor, Jr.",
     defaultOgImage: "./defaultog.jpg",
     latestPosts: 3,
     postsPerPage: 3,
