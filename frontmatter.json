@@ -4,7 +4,7 @@
     {
       "name": "default",
       "pageBundle": false,
-      "previewPath": "blogs/",
+      "previewPath": "blog/",
       "filePrefix": null,
       "fileType": "mdx",
       "fields": [
