@@ -1,7 +1,7 @@
 export default {
     title: "Home",
     titleSuffix: " | HMenorJr",
-    description: "A website development, design and blogging for solving technical problem encounters of Herman Menor, Jr.",
+    description: "HMenorJr is a personal and blog website of Herman Menor (Jr.), a programmer in Åland Islands, Finland",
     defaultOgImage: "./defaultog.jpg",
     latestPosts: 3,
     postsPerPage: 3,
