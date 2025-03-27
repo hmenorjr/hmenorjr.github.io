@@ -106,13 +106,51 @@ body::-webkit-scrollbar-thumb {
 }
 
 #services {
-    padding: 50px;
-    background: #f8f9fa;
+    width: 100%;
+    background: rgba(59, 130, 246, 0.5); /* Matches your site color */
+    padding: 80px 20px;
     text-align: center;
 }
-.service-item {
-    margin: 20px;
-    padding: 15px;
-    border: 1px solid #ddd;
-    border-radius: 10px;
+
+.services-container {
+    max-width: 1200px;
+    margin: auto;
 }
+
+.services-container h2 {
+    font-size: 2.5rem;
+    margin-bottom: 30px;
+    color: #fff;
+}
+
+.services-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.service-card {
+    background: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    max-width: 300px;
+    text-align: center;
+    transition: transform 0.3s ease-in-out;
+}
+
+.service-card:hover {
+    transform: scale(1.05);
+}
+
+.service-card h3 {
+    font-size: 1.5rem;
+    color: #333;
+}
+
+.service-card p {
+    font-size: 1rem;
+    color: #666;
+}
+
