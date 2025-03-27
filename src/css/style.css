@@ -107,10 +107,7 @@ body::-webkit-scrollbar-thumb {
 
 #services {
     width: 100%;
-    background-image:   linear-gradient(90deg,transparent,transparent 50%,theme('colors.pacamara-white') 50%,theme('colors.pacamara-white') 100%),
-                        linear-gradient(90deg,theme('colors.pacamara-secondary'),theme('colors.pacamara-accent'));
-
-    @apply transition-all duration-300 rounded-full;
+    background: theme('colors.pacamara-secondary'); /* Matches your site color */
     padding: 80px 20px;
     text-align: center;
 }
