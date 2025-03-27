@@ -104,3 +104,15 @@ body::-webkit-scrollbar-thumb {
     outline: 0px solid theme('colors.pacamara-accent');
     border-radius: 10px;
 }
+
+#services {
+    padding: 50px;
+    background: #f8f9fa;
+    text-align: center;
+}
+.service-item {
+    margin: 20px;
+    padding: 15px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+}
