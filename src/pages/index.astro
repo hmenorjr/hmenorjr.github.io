@@ -2,6 +2,8 @@
 import BaseLayout from "../layouts/BaseLayout.astro";
 import { Image } from "astro:assets";
 import heroImage from "../images/about-me.jpg";
+import heroImageDark from "../images/logo-dark.png";
+import heroImageLight from "../images/logo-light.png";
 import FeaturedArticles from "../components/articles/FeaturedArticles.astro";
 // import Projects from "../components/Projects.astro";
 // import NewsletterForm from "../components/NewsletterForm.astro";
@@ -20,7 +22,7 @@ import { Icon } from "astro-icon/components";
 				</h1>
 				<div class="mt-8 leading-8">
 					<p>
-						Hi! My name is Herman. I'm a Platform Engineer and Web Developer navigating 
+						Hi! My name is Herman, Platform Engineer and Web Developer navigating 
 						startup life in Åland Islands, Finland's tech scene. From identifying the problem 
 						to development and testing, journey with me as I solve problems through coding and technology.
 					</p>
@@ -41,13 +43,13 @@ import { Icon } from "astro-icon/components";
 			<div class="order-first lg:order-last flex-shrink-0 mb-8">
 
 				<Image
-					src={heroImage}
-					alt="Picture of Herman Menor Jr."
+					src={heroImageLight}
+					alt="A logo of letters H and M in light mode."
 					class="block dark:hidden  rounded-full  size-20 lg:size-[350px] object-cover ring-1 ring-slate-400/30 shadow"
 				/>
 				<Image
-					src={heroImage}
-					alt="Picture of Herman Menor Jr."
+					src={heroImageDark}
+					alt="A logo of letters H and M in light mode."
 					class="hidden dark:block rounded-full size-20 lg:size-[350px] object-cover ring-1 ring-slate-400/30 shadow"
 				/>
 			</div>
