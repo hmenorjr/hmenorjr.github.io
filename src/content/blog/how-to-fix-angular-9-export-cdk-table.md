@@ -21,13 +21,13 @@ Any possible solution that worked on some but doesn’t worked on me.
 
 After reading some blogs again, one caught my attention and noticed the writer just executed the following:
 
-First: ``$ npm install @angular/core``
+First: `$ npm install @angular/core`
 
-And then: ``$ npm install @angular/common``
+And then: `$ npm install @angular/common`
 
-And lastly: ``npm install @angular/``
+And lastly: `npm install @angular/`
 
-However, when I opened the ``package.json``… It’s already installed.
+However, when I opened the `package.json`… It’s already installed.
 
 ## What now?
 
@@ -83,7 +83,7 @@ After:
     "zone.js": "~0.10.2"
 ```
 
-Noticed the highlighted lines? For some reason the when ``@angular/cdk`` was added it was inserted at the top. 
+Noticed the highlighted lines? For some reason the when `@angular/cdk` was added it was inserted at the top. 
 
 Seems like all new plugins that were saved were at the top. But during npm install that’s not the case.
 
@@ -98,4 +98,4 @@ Thank you for reading, hope this helped you solve this issue:
 export 'CDK_TABLE' was not found in '@angular/cdk/table'
 ```
 
-### Support me by [buying me a coffee](https://coff.ee/hmenorjr)
+### Your support means a lot — you can [buy me a coffee](https://coff.ee/hmenorjr) to help me continue creating
