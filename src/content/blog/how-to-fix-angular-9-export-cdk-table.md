@@ -6,6 +6,8 @@ heroImage: '../../images/blog-export-cdk-table-error.webp'
 featured: true
 ---
 
+I was containerizing the front-end of a web application that was built in Angular 9 with Bootstrap and Angular Material. It was working on my local terminal. However, when I containerized it, several warnings and this error occurs.
+
 ## What I Did?
 
 Of course, Googled my way into it. Tried several blogs:
