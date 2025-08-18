@@ -9,6 +9,7 @@ featured: true
 Like most developers using MacOS, we use Homebrew to install and update software/casks. As of this writing, I was having challenges updating Python2 to Python3. Here's how I fixed it.
 
 ## Steps Taken
+
 ### 1 Check Version
 
 Run: `$ brew info python`
@@ -93,10 +94,10 @@ So we executed the following commands:
 
 Then: `$ brew link python`
 
-Final result? 
+Final result?
 
 ```sh
 Linking /usr/local/Cellular/python/3.7.7... 5 symlinks created
 ```
 
-### Your support means a lot — you can [buy me a coffee](https://coff.ee/hmenorjr) to help me continue creating.
+### Your support means a lot — you can [buy me a coffee](https://coff.ee/hmenorjr) to help me continue creating
