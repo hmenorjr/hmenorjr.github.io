@@ -1,96 +1,131 @@
-# HMenorJr
-## Freelance Platform & DevOps Engineering — designed for scale, reliability, and speed.
-I'm *H*erman. A **Freelance Platform / DevOps Engineer and Consultant**. I help startups and growing teams design, build, and operate **scalable, secure, production-ready cloud platforms**. Available for **short-term consulting, fractional DevOps, and long-term engagements**.
+# HMenorJr - Blog Site
 
-## Services
-I provide hands-on engineering and advisory services across the full infrastructure lifecycle:
-- Cloud architecture design and implementation (AWS, GCP, Azure)
-- Kubernetes platform design, migration, and operations
-- CI/CD pipeline design and optimization
-- Infrastructure as Code (Terraform, Pulumi)
-- Reliability engineering (SRE), observability, and incident response
-- Security hardening, IAM, and secrets management
-- Cloud cost optimization (FinOps)
-- Platform engineering and internal developer platforms (IDPs)
+This is my new blog site built with Astro
 
-## Who I Work With
-- Seed to Series C startups
-- SaaS companies running production workloads
-- Engineering teams scaling from MVP to multi-region
-- Organizations modernizing legacy infrastructure
+## Template from - So Basic
 
-I collaborate closely with **engineering, product, and security teams** to deliver practical, maintainable solutions—not over-engineered systems.
+### 📦 Installation
 
-## Technical Exposure
-### Cloud Platforms
-- AWS (EC2, EKS, RDS, IAM, VPC)
-- GCP (GKE, Cloud Run, IAM)
-- Azure (AKS, Networking)
+#### Astro installation
 
-### Containers & Orchestration
-- Kubernetes · Docker · Helm
-- Service meshes and ingress controllers
+```sh
+npm create astro@latest -- --template lukeska/sobasic
+```
 
-### Infrastructure as Code & GitOps
-- Terraform · Pulumi · CloudFormation
-- Argo CD · Flux
-- Git-based workflows and change management
+#### Manual installation
 
-### CI/CD & Automation
-- GitHub Actions · GitLab CI · Jenkins
-- Secure build pipelines and deployment automation
-- Artifact registries and versioning
+##### 1. Clone the repo
+```sh
+git clone https://github.com/lukeska/sobasic.git my-project
+# or
+git clone https://github.com/lukeska/sobasic.git .
+```
+The . will clone it to the current directory so make sure you are inside your project folder first.
 
-### Observability & Reliability
-- Prometheus · Grafana · OpenTelemetry
-- Logging, metrics, and distributed tracing
-- SLOs, SLIs, error budgets, and incident response
+##### 2. Install dependencies
+```sh
+npm install
+```
 
-### Security & Compliance
-- IAM and least-privilege access
-- Secrets management (Vault, SSM, Secrets Manager)
-- Secure supply chains and policy enforcement
+##### 3. Start the development server
+```sh
+npm run dev
+```
+### 🚀 Project Structure
 
-## Engagement Outcomes
-Recent consulting work has included:
+Inside of your Astro project, you'll see the following folders and files:
 
-- Designing Kubernetes platforms supporting **production workloads**
-- Reducing deployment times by **X%** through CI/CD optimization
-- Improving system availability to **99.9%+** using SLO-driven reliability practices
-- Migrating legacy infrastructure to **Terraform-based IaC**
-- Enabling self-service deployments through internal platforms
-- Reducing cloud spend by **X%** via cost visibility and optimization
+```text
+/
+├── public/               
+│   └── favicon.svg 
+├── src/
+│   ├── components/        
+│   ├── content/          
+│   │   └── blog/
+│   ├── images/
+│   ├── layouts/          
+│   ├── pages/           
+│   │   └── index.astro
+│   └── styles/          
+├── astro.config.mjs     
+└── package.json         
+```
 
-## How I Work
+Astro looks for `.astro` or `.md` files in the `src/pages/` directory. Each page is exposed as a route based on its file name.
 
-- **Outcome-driven** – focused on business impact, not just tooling
-- **Automation-first** – eliminate manual and error-prone processes
-- **Security by default** – built into pipelines and platforms
-- **Documentation included** – clear runbooks and handover
-- **Pragmatic solutions** – simple, scalable, and maintainable
+There's nothing special about `src/components/`, but that's where we like to put any Astro/React/Vue/Svelte/Preact components.
 
+Any static assets, like images, can be placed in the `public/` directory.
+
+### 📰 Add your own content
+
+#### Add or change existing pages
+
+Feel free to change any of the content on the existing files in folder `src/pages/`. In this folder you 
+can add any `.astro` file. Make sure to use `<BaseLayout> to ensure any new page looks like the rest of the site.
+
+```html
 ---
-
-## Availability & Engagement Models
-
-- Short-term consulting (architecture reviews, audits)
-- Fractional DevOps / Platform Engineer
-- Project-based infrastructure builds
-- Ongoing platform ownership and support
-
-Remote-friendly. Open to async-first teams.
-
+import BaseLayout from "../layouts/BaseLayout.astro";
 ---
+<BaseLayout>
+    <!-- your content here -->
+</BaseLayout>
+```
 
-## Keywords (for ATS)
+#### Add new articles to the blog
 
-Platform Engineer, DevOps Engineer, Cloud Engineer, Site Reliability Engineer, SRE, Kubernetes, AWS, GCP, Azure, Terraform, Infrastructure as Code, CI/CD, GitOps, Cloud Security, Observability, Monitoring, Automation, Platform Engineering, Freelance DevOps, DevOps Consultant
+Articles for the blog can be added as `.md` or `.mdx` files inside `src/content/blog/`. Hero images for the articles can be added to `src/images/`
 
+Make sure to add the following data at the top of your file:
+
+```html
 ---
+title: 'This is my title'
+description: 'This is my description'
+pubDate: '2025-01-02'
+heroImage: '../../images/article-image.jpg'
+featured: true
+---
+```
 
-## Contact
+- title is the title and meta title for the article
+- description is used as short text in list of articles and as meta description
+- pubDate is the publication date, used to sort articles in lists
+- heroImage is optional and references an image inside `src/images/`
+- featured is optional. Values can be `true` or `false`. It defines if an article is visible in the `FeaturedArticles.astro` component.
 
-- 🌐 Website: [yourdomain.com]
-- 💼 LinkedIn: [linkedin.com/in/yourname]
-- 🧑‍💻 GitHub: [github.com/yourusername]
-- ✉️ Email: you@yourdomain.com
+#### Change links in the main navigation
+
+Links in the main navigation can be changed in `src/components/Header.astro` by altering this variable:
+
+```javascript
+const navItems = [
+	{ href: "/", text: "Home", active: currentPath === "/" },
+	{ href: "/blog", text: "Blog", active: currentPath.startsWith("/blog") },
+	{ href: "/about", text: "About", active: currentPath.startsWith("/about") },
+];
+```
+
+### 🎨 Customization
+
+The primary color of this theme can be easily changed in `src/styles/global.css`.
+You can assign any Tailwind color to the various `color-primary-*` variables.
+
+```css
+@theme {
+    --color-primary-50: var(--color-purple-50);
+    --color-primary-100: var(--color-purple-100);
+    --color-primary-200: var(--color-purple-200);
+    --color-primary-300: var(--color-purple-300);
+    --color-primary-400: var(--color-purple-400);
+    --color-primary-500: var(--color-purple-500);
+    --color-primary-600: var(--color-purple-600);
+    --color-primary-700: var(--color-purple-700);
+    --color-primary-800: var(--color-purple-800);
+    --color-primary-900: var(--color-purple-900);
+    --color-primary-950: var(--color-purple-950);
+    ...
+}
+```
