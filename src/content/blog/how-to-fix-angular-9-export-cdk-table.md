@@ -100,4 +100,5 @@ Thank you for reading, hope this helped you solve this issue:
 export 'CDK_TABLE' was not found in '@angular/cdk/table'
 ```
 
-### Your support means a lot — you can [buy me a coffee](https://coff.ee/hmenorjr) to help me continue creating
+### Your support means a lot 
+You can [buy me a coffee](https://ko-fi.com/hmenorjr) to help me continue creating.

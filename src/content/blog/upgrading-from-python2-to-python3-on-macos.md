@@ -100,4 +100,5 @@ Final result?
 Linking /usr/local/Cellular/python/3.7.7... 5 symlinks created
 ```
 
-### Your support means a lot — you can [buy me a coffee](https://coff.ee/hmenorjr) to help me continue creating
+### Your support means a lot 
+You can [buy me a coffee](https://ko-fi.com/hmenorjr) to help me continue creating content.

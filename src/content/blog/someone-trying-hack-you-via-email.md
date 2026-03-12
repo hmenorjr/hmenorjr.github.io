@@ -43,4 +43,5 @@ Here are some red flags to watch out for:
 
 Phishing emails are like digital traps. Designed to fool you into giving away your private information. If something feels off, trust your gut and double-check before clicking anything. Staying cautious online is just as important as locking your front door in real life.
 
-## Your support means a lot — you can [buy me a coffee](https://coff.ee/hmenorjr) to help me continue creating
+## Your support means a lot 
+You can [buy me a coffee](https://ko-fi.com/hmenorjr) to help me continue creating.
