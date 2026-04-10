@@ -19,4 +19,4 @@ Of course, Googled my way into it. Tried several blogs:
 
 Any possible solution that worked on some but doesn’t worked on me.
 
-You can read details [HERE](hhttps://ko-fi.com/Post/How-to-Fix-Angular-9-Export-CDKTable-J3J21VWF7Z).
+You can read details [HERE](https://ko-fi.com/Post/How-to-Fix-Angular-9-Export-CDKTable-J3J21VWF7Z).
