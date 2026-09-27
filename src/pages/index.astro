@@ -5,7 +5,7 @@ import heroImageDark from "../images/about-me-dark.jpg";
 import heroImageLight from "../images/about-me-light.jpg";
 import FeaturedArticles from "../components/articles/FeaturedArticles.astro";
 import Projects from "../components/Projects.astro";
-import NewsletterForm from "../components/NewsletterForm.astro";
+// import NewsletterForm from "../components/NewsletterForm.astro";
 ---
 
 <BaseLayout>
@@ -16,15 +16,13 @@ import NewsletterForm from "../components/NewsletterForm.astro";
 				<h1
 					class="text-3xl sm:text-5xl font-bold tracking-tight text-balance"
 				>
-					Code. Blood. Mild workplace horror.
+					Build. Test. Automate.
 				</h1>
 				<div class="mt-8 leading-8">
 					<p>
-						I’m Lorenzo di Lume Nero, a centuries-old vampire and
-						full stack developer navigating startup life in
-						Transylvania's tech scene. From nocturnal debugging tips
-						to supernatural sprint planning, sink your fangs into
-						articles that bite back.
+						I'm Herman Menor Jr. — Platform Engineer, website builder & tech dad. 
+						10+ years architecting scalable systems, backend development and automation. Based in Finland, working 
+						location-independently. Here: deep dives into DevOps, platform engineering and the operational lessons that stick.
 					</p>
 				</div>
 			</div>
@@ -33,12 +31,12 @@ import NewsletterForm from "../components/NewsletterForm.astro";
 
 				<Image
 					src={heroImageLight}
-					alt="Code. Blood. Mild workplace horror."
+					alt="Build. Test. Automate."
 					class="block dark:hidden  rounded-full  size-20 lg:size-[350px] object-cover ring-1 ring-slate-400/30 shadow"
 				/>
 				<Image
 					src={heroImageDark}
-					alt="Code. Blood. Mild workplace horror."
+					alt="Build. Test. Automate."
 					class="hidden dark:block rounded-full size-20 lg:size-[350px] object-cover ring-1 ring-slate-400/30 shadow"
 				/>
 			</div>
@@ -50,7 +48,7 @@ import NewsletterForm from "../components/NewsletterForm.astro";
 		<h2
 			class="text-2xl sm:text-4xl font-bold tracking-tight mb-10 sm:mb-20"
 		>
-			Featured articles
+			Featured Articles
 		</h2>
 		<FeaturedArticles />
 	</div>
@@ -71,7 +69,7 @@ import NewsletterForm from "../components/NewsletterForm.astro";
 	</div>
 
 	<!-- Newsletter -->
-	<div class="mx-auto lg:max-w-4xl my-16 sm:my-30">
+	<!-- <div class="mx-auto lg:max-w-4xl my-16 sm:my-30">
 		<NewsletterForm />
-	</div>
+	</div> -->
 </BaseLayout>
