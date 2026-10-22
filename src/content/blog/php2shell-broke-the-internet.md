@@ -1,6 +1,9 @@
-# PHP2Shell: How a 12-Year-Old Bug Nearly Broke the Internet
-
-**You know how if you find a cheat code in a video game, you can suddenly fly, spawn infinite weapons, skip levels? Imagine that cheat code worked on *every single website* on the internet at once. That's basically what PHP2Shell was.**
+---
+title: 'PHP2Shell: How a 12-Year-Old Bug Nearly Broke the Internet'
+description: 'You know how if you find a cheat code in a video game, you can suddenly fly, spawn infinite weapons, skip levels? Imagine that cheat code worked on *every single website* on the internet at once. That's basically what PHP2Shell was.'
+pubDate: '2026-10-22'
+featured: true
+---
 
 ## What actually happened
 
